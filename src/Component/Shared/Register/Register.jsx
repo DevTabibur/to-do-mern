@@ -91,7 +91,7 @@ const Register = () => {
           });
           break;
         case "auth/invalid-password":
-          toast.error("Wrong password. Intruder!!", {
+          toast.error("Wrong password. todo!!", {
             toastId: "InvalidEmail",
           });
           break;
@@ -105,11 +105,9 @@ const Register = () => {
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
 
-//   if (user1) {
-//     navigate(from, { replace: true });
-//   }
-
-//   console.log("token", token);
+  if (user1) {
+    navigate(from, { replace: true });
+  }
 
   return (
     <>
