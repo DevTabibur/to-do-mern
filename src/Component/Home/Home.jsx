@@ -1,12 +1,24 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import {
+  Button,
+  Col,
+  Container,
+  FloatingLabel,
+  Form,
+  Row,
+} from "react-bootstrap";
 import "./Home.css";
 
 const Home = () => {
+  const handleForm = (e) => {
+    e.preventDefault();
+    alert();
+  };
+
   return (
     <>
-      <Container className="py-3">
-        <div className="section-title py-3 text-center">
+      <Container className="py-4">
+        <div className="section-title py-3 text-center mb-3">
           <h2>Welcome to To-Do App</h2>
           <p>
             You can add your short note here, also you can manage them after
@@ -14,9 +26,42 @@ const Home = () => {
           </p>
         </div>
         <Row>
-          <Col>
-            <h2>hello world</h2>
+          <Col md={2} lg={2}></Col>
+          <Col md={8} lg={8} sm={12}>
+            <div className="to-do-app">
+              <Form onSubmit={handleForm} className="form-parent">
+                <Form.Group className="mb-3">
+                  <Form.Label>Enter Your Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter Name" required />
+                </Form.Group>
+
+                <Form.Group className="mb-3">
+                  <Form.Label>Enter notes here</Form.Label>
+                  <FloatingLabel
+                    controlId="floatingTextarea"
+                    label="Description"
+                    className="mb-3"
+                  >
+                    <Form.Control
+                      as="textarea"
+                      placeholder="Leave a description here"
+                      required
+                    />
+                  </FloatingLabel>
+                </Form.Group>
+
+                {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label="Check me out" />
+
+                </Form.Group> */}
+
+                <Button variant="primary" type="submit">
+                  Add Task
+                </Button>
+              </Form>
+            </div>
           </Col>
+          <Col md={2} lg={2}></Col>
         </Row>
       </Container>
     </>

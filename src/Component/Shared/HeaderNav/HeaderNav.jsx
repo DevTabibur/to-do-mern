@@ -7,7 +7,7 @@ const HeaderNav = () => {
     <>
       <Navbar collapseOnSelect expand="lg" bg="warning" variant="light">
         <Container>
-          <Navbar.Brand as={Link} t0="/">ToDo App</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">ToDo App</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
