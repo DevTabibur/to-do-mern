@@ -1,4 +1,4 @@
-// import { sendEmailVerification } from "firebase/auth";
+// @ts-nocheck
 import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import {
@@ -12,13 +12,11 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import auth from "../../../Firebase/firebase.init";
-// import useToken from "../../Hooks/useToken";
 import "./Register.css";
 
 const Register = () => {
   const [user1] = useAuthState(auth);
 
-//   const token = useToken(user1);
   const [sendEmailVerification] = useSendEmailVerification(auth);
 
   const [showPass, setShowPass] = useState(false);
@@ -50,7 +48,6 @@ const Register = () => {
       setUserInfo({ ...userInfo, email: "" });
     }
 
-    // setEmail(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
