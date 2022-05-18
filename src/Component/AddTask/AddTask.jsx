@@ -14,7 +14,10 @@ const AddTask = () => {
       e.preventDefault();
     const name = e.target.name.value;
     const description = e.target.description.value;
-    // console.log(name, description);
+
+    const user = {name, description};
+    //send data to server
+
     
   };
 

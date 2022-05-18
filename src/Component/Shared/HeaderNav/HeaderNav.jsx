@@ -7,7 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import './HeaderNav.css';
 
 const HeaderNav = () => {
-  const user = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   
 
