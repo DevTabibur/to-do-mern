@@ -1,0 +1,21 @@
+.home{}
+.home .img-div{}
+.home .img-div img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.add-link{
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    color: orange;
+    background-color: rgb(31, 31, 56);
+    transition: .4s;
+}
+.add-link:hover{
+    background-color: orange;
+    color: rgb(31, 31, 56);
+}
