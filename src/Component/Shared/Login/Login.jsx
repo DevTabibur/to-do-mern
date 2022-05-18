@@ -186,7 +186,7 @@ useEffect(()=>{
 
                   <div className="my-3 d-flex justify-content-center form-bottom-text">
                     <h6 className="text-dark ">
-                      New to Incubator?{" "}
+                      New to ToDo App?{" "}
                       <Link to="/register"> Create an Account</Link>
                     </h6>
                   </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Row, Table } from "react-bootstrap";
 
 const ShowTask = ({ db, handleDelete }) => {
-  const { id, name, description } = db;
+  const { _id, name, description } = db;
   return (
     <>
       <Row>
@@ -18,12 +18,12 @@ const ShowTask = ({ db, handleDelete }) => {
             </thead>
             <tbody>
               <tr>
-                <td>{id}</td>
+                <td>{_id}</td>
                 <td>{name}</td>
                 <td>{description}</td>
                 
                 <td>
-                <Button className="w-25" variant="danger" onClick={() => handleDelete(id)}>
+                <Button className="w-25" variant="danger" onClick={() => handleDelete(_id)}>
                   Delete
                 </Button>
                 </td>

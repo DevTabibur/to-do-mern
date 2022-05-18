@@ -1,31 +1,25 @@
 [
     {
-        "id": 1,
         "name" : "Abdul",
         "description" : "Hello everybody"
     },
     {
-        "id": 2,
         "name" : "Abdul",
         "description" : "Hello everybody"
     },
     {
-        "id": 3,
         "name" : "Abdul",
         "description" : "Hello everybody"
     },
     {
-        "id": 4,
         "name" : "Abdul",
         "description" : "Hello everybody"
     },
     {
-        "id": 5,
         "name" : "Abdul",
         "description" : "Hello everybody"
     },
     {
-        "id": 6,
         "name" : "Abdul",
         "description" : "Hello everybody"
     }

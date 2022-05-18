@@ -7,6 +7,8 @@ import {
   Form,
   Row,
 } from "react-bootstrap";
+import { useHref } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import "./AddTask.css";
 
 const AddTask = () => {
@@ -16,7 +18,21 @@ const AddTask = () => {
     const description = e.target.description.value;
 
     const user = {name, description};
-    //send data to server
+     // send this newItem info to server
+     const url = `http://localhost:5000/add-task`;
+     fetch(url, {
+       method: "POST",
+       headers: {
+         "content-type": "application/json",
+       },
+       body: JSON.stringify(user),
+     })
+       .then((res) => res.json())
+       .then((data) => {
+       e.target.reset();
+
+         toast.success("Added Successfully", {toastId : "SUCCESS"})
+       });
 
     
   };
@@ -24,6 +40,7 @@ const AddTask = () => {
   return (
     <>
       <Container className="py-4">
+      <ToastContainer/>
         <div className="section-title py-3 text-center mb-3">
           <h2>Welcome to To-Do App</h2>
           <p>
