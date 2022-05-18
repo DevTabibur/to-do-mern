@@ -6,6 +6,7 @@ import HeaderNav from './Component/Shared/HeaderNav/HeaderNav.jsx';
 import MyTask from './Component/MyTask/MyTask.jsx';
 import RequireAuth from "./Component/RequireAuth/RequireAuth";
 import AddTask from "./Component/AddTask/AddTask";
+import Register from "./Component/Shared/Register/Register";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/my-task" element={<MyTask/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
       </Routes>
     </>
   );
