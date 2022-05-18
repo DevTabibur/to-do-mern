@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { useHref } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import MyTask from "../MyTask/MyTask";
 import "./AddTask.css";
 
 const AddTask = () => {
@@ -73,12 +74,6 @@ const AddTask = () => {
                     />
                   </FloatingLabel>
                 </Form.Group>
-
-                {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                  <Form.Check type="checkbox" label="Check me out" />
-
-                </Form.Group> */}
-
                 <Button variant="primary" type="submit">
                   Add Task
                 </Button>
@@ -87,6 +82,11 @@ const AddTask = () => {
           </Col>
           <Col md={2} lg={2}></Col>
         </Row>
+
+        <Row>
+          <MyTask/>
+        </Row>
+
       </Container>
     </>
   );

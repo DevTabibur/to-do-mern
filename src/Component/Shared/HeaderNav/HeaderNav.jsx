@@ -21,10 +21,9 @@ const HeaderNav = () => {
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/add-task">Add Task</Nav.Link>
-              <Nav.Link as={Link} to="/my-task">My Task</Nav.Link>
               {user ? (
                 <button
-                  className="header-link sign-out-btn"
+                  className="sign-out-btn"
                   onClick={() => signOut(auth)}
                 >
                   Logout

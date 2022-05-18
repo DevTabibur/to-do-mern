@@ -7,7 +7,7 @@ const useData = () => {
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
-          console.log("data", data);
+          // console.log("data", data);
           setUserData(data)
         });
     }, [userData]);

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row, Table } from "react-bootstrap";
 import useData from "../Hooks/useData";
@@ -16,7 +17,7 @@ const MyTask = () => {
       })
       .then(res => res.json())
       .then( data =>{
-        console.log('deletd data', data);
+        // console.log('deletd data', data);
       })
     }
   }
