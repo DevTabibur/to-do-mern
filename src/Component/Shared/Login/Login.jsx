@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from 'react';
 import './Login.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
@@ -133,14 +134,6 @@ useEffect(()=>{
 
   return (
     <>
-      <div className="page-title shadow">
-        <Container className="py-5">
-          <Row>
-            <h2>LOGIN HERE</h2>
-            <p>You have to Login first, than You!</p>
-          </Row>
-        </Container>
-      </div>
 
       <div className="login-bg">
       
