@@ -11,8 +11,11 @@ import "./Home.css";
 
 const Home = () => {
   const handleForm = (e) => {
-    e.preventDefault();
-    alert();
+      e.preventDefault();
+    const name = e.target.name.value;
+    const description = e.target.description.value;
+    // console.log(name, description);
+    
   };
 
   return (
@@ -32,7 +35,7 @@ const Home = () => {
               <Form onSubmit={handleForm} className="form-parent">
                 <Form.Group className="mb-3">
                   <Form.Label>Enter Your Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter Name" required />
+                  <Form.Control type="text" name="name" placeholder="Enter Name" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
@@ -44,6 +47,7 @@ const Home = () => {
                   >
                     <Form.Control
                       as="textarea"
+                      name="description"
                       placeholder="Leave a description here"
                       required
                     />

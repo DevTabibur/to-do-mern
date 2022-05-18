@@ -8,3 +8,6 @@
 3. React Bootstrap
 4. React icons
 5. Google Font
+6. React Toastify
+7. Firebase
+8. react Firebase Hooks

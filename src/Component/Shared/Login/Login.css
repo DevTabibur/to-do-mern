@@ -1,0 +1,85 @@
+.page-title {
+    /* background: url("../../../Assets/Images/page-title.jpg") center center/cover no-repeat local; */
+    width: 100%;
+    height: 245px;
+    position: relative;
+    text-align: center;
+}
+.page-title h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 11px;
+    font-size: 3.4375rem;
+    color: #CC9544;
+} 
+.page-title p {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #CC9544;
+    margin: 0;
+}
+
+/* form related css */
+
+.form-bg{}
+.form-bg .title{
+    color: #262b3e;
+}
+.form-bg .title .title-2{
+    color: #c8b38b;
+}
+.form-bg .login-btn{
+    color: #c8b38b;
+    border: 0;
+    background-color: #262b3e;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.logo-wrapper {
+    padding: 2px;
+    border-radius: 7px;
+  }
+  .google-auth {
+      position: relative;
+    height: 55px;
+    width: 100%;
+    background-color: #fc8b38bff;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    color: #1b4388;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .google-auth img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .google-auth p {
+    margin-left: 10px;
+  }
+  .error-text{
+    color: red;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  .error-text::before{
+    content: "❌  ";
+  }
+  .pass-reset{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #77e0f3;
+  }
