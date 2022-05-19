@@ -20,7 +20,7 @@ const AddTask = () => {
 
     const user = {name, description};
      // send this newItem info to server
-     const url = `https://enigmatic-sea-26280.herokuapp.com/add-task`;
+     const url = `https://blooming-reaches-53709.herokuapp.com/add-task`;
      fetch(url, {
        method: "POST",
        headers: {

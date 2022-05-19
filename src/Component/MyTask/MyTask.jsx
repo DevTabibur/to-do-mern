@@ -14,7 +14,7 @@ const MyTask = () => {
 
     const newSelected = !selected;
     const newSelectedObj = { newSelected };
-    const url = `https://enigmatic-sea-26280.herokuapp.com/tasks/${id}`;
+    const url = `https://blooming-reaches-53709.herokuapp.com/tasks/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {

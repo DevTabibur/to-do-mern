@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const useData = () => {
     const [userData, setUserData]= useState([]);
     useEffect(() => {
-      const url = `https://enigmatic-sea-26280.herokuapp.com/tasks`;
+      const url = `https://blooming-reaches-53709.herokuapp.com/tasks`;
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
