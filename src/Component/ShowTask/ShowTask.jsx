@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, Col, Row, Table } from "react-bootstrap";
 
-const ShowTask = ({ db, handleDelete }) => {
-  const { _id, name, description } = db;
+const ShowTask = ({ db, handleDelete, handleComplete }) => {
+  const { _id, name, description, selected } = db;
+
   return (
     <>
       <Row>
@@ -19,12 +20,15 @@ const ShowTask = ({ db, handleDelete }) => {
             <tbody>
               <tr>
                 <td>{_id}</td>
-                <td>{name}</td>
+                <td className={selected ? "line-through" : ""}>{name}</td>
                 <td>{description}</td>
                 
                 <td>
-                <Button className="w-25" variant="danger" onClick={() => handleDelete(_id)}>
+                <Button className="w-25 me-3" variant="danger" onClick={() => handleDelete(_id)}>
                   Delete
+                </Button>
+                <Button className="w-25" variant="primary" onClick={() => handleComplete(_id)}>
+                  Complete
                 </Button>
                 </td>
               </tr>
